@@ -37,7 +37,27 @@ h2 {
   width: 100%; }
 
 .messageInput {
-  width: 90%; }
+  width: 90%;
+  line-height: 2em;
+  padding-left: 3%; }
+
+::-webkit-input-placeholder {
+  color: #474747;
+  font-size: 1.5em; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #474747;
+  font-size: 1.5em; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #474747;
+  font-size: 1.5em; }
+
+:-ms-input-placeholder {
+  color: #474747;
+  font-size: 1.5em; }
 
 .clickSend {
   right: 0;
@@ -45,3 +65,7 @@ h2 {
   color: white;
   background-color: #aae6d9;
   padding: 2%; }
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.15s 0.15s ease;
+  opacity: 0; }

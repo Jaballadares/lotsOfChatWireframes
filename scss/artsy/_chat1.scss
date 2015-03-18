@@ -1,8 +1,8 @@
 .chatContainer {
-	width: 85%;
-	height: 250px;
-	border: 5px solid $orange;
-	margin: 0 auto;
+	width   : 85%;
+	height  : 250px;
+	border  : 5px solid $orange;
+	margin  : 0 auto;
 	position: relative;
 }
 
@@ -12,14 +12,42 @@
 	display: flex;
 	width: 100%;
 }
-.messageInput {
-	width: 90%;
 
+.messageInput {
+	width   : 90%;
+	line-height: 2em;
+	padding-left: 3%;
 }
+
+::-webkit-input-placeholder {
+   color : $dark-gray;
+	 font-size: 1.5em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color : $dark-gray;
+	 font-size: 1.5em;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+   color : $dark-gray;
+	 font-size: 1.5em;
+}
+
+:-ms-input-placeholder {
+   color : $dark-gray;
+	 font-size: 1.5em;
+}
+
 .clickSend {
-	right: 0;
-	border: none;
-	color: white;
+	right   : 0;
+	border  : none;
+	color   : white;
 	background-color: $teal;
 	padding: 2%;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.15s 0.15s ease;
+  opacity: 0;
 }
