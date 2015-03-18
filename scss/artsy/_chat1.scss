@@ -17,27 +17,36 @@
 	width   : 90%;
 	line-height: 2em;
 	padding-left: 3%;
+	font-size: 1.5em;
+	@include breakpoint(small) {
+		font-size: 1em;
+	}
 }
 
 ::-webkit-input-placeholder {
    color : $dark-gray;
-	 font-size: 1.5em;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color : $dark-gray;
-	 font-size: 1.5em;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
    color : $dark-gray;
-	 font-size: 1.5em;
 }
 
 :-ms-input-placeholder {
    color : $dark-gray;
-	 font-size: 1.5em;
 }
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.15s 0.15s ease;
+  opacity: 0;
+}
+
+/* === === === === ==== ===== ========= ======== =========
+			BUTTONS
+========= ==================== ========= ======= ===== */
 
 .clickSend {
 	right   : 0;
@@ -45,9 +54,12 @@
 	color   : white;
 	background-color: $teal;
 	padding: 2%;
-}
-
-[placeholder]:focus::-webkit-input-placeholder {
-  transition: opacity 0.15s 0.15s ease;
-  opacity: 0;
+	font-size: 1em;
+	&:hover {
+		background-color: darken($teal, 10%);
+		cursor: pointer;
+	}
+	@include breakpoint(small) {
+		font-size: .7em;
+	}
 }

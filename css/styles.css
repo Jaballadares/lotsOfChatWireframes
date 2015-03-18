@@ -39,33 +39,43 @@ h2 {
 .messageInput {
   width: 90%;
   line-height: 2em;
-  padding-left: 3%; }
+  padding-left: 3%;
+  font-size: 1.5em; }
+  @media (max-width: 767px) {
+    .messageInput {
+      font-size: 1em; } }
 
 ::-webkit-input-placeholder {
-  color: #474747;
-  font-size: 1.5em; }
+  color: #474747; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #474747;
-  font-size: 1.5em; }
+  color: #474747; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #474747;
-  font-size: 1.5em; }
+  color: #474747; }
 
 :-ms-input-placeholder {
-  color: #474747;
-  font-size: 1.5em; }
+  color: #474747; }
 
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.15s 0.15s ease;
+  opacity: 0; }
+
+/* === === === === ==== ===== ========= ======== =========
+			BUTTONS
+========= ==================== ========= ======= ===== */
 .clickSend {
   right: 0;
   border: none;
   color: white;
   background-color: #aae6d9;
-  padding: 2%; }
-
-[placeholder]:focus::-webkit-input-placeholder {
-  transition: opacity 0.15s 0.15s ease;
-  opacity: 0; }
+  padding: 2%;
+  font-size: 1em; }
+  .clickSend:hover {
+    background-color: #83dac7;
+    cursor: pointer; }
+  @media (max-width: 767px) {
+    .clickSend {
+      font-size: .7em; } }
