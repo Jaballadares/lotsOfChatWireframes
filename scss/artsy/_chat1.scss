@@ -1,0 +1,25 @@
+.chatContainer {
+	width: 85%;
+	height: 250px;
+	border: 5px solid $orange;
+	margin: 0 auto;
+	position: relative;
+}
+
+.messagingArea {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+}
+.messageInput {
+	width: 90%;
+
+}
+.clickSend {
+	right: 0;
+	border: none;
+	color: white;
+	background-color: $teal;
+	padding: 2%;
+}

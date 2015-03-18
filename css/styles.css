@@ -1,0 +1,47 @@
+body {
+  box-sizing: border-box; }
+
+/**** **** **** **** ****
+BREAKPOINTS -
+USAGE: @include breakpoint(small) {}
+**** **** **** **** ****/
+/**** **** **** **** ****
+Colors
+**** **** **** **** ****/
+html {
+  background: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 100%; }
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.688em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.037em;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2.3%; }
+
+.chatContainer {
+  width: 85%;
+  height: 250px;
+  border: 5px solid #d85212;
+  margin: 0 auto;
+  position: relative; }
+
+.messagingArea {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%; }
+
+.messageInput {
+  width: 90%; }
+
+.clickSend {
+  right: 0;
+  border: none;
+  color: white;
+  background-color: #aae6d9;
+  padding: 2%; }
