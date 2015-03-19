@@ -36,10 +36,9 @@ h2 {
   height: 100%; }
 
 .leftHalf {
-  width: 50%;
-  background: #6a1b35; }
+  width: 50%; }
   .leftHalf .leftMessage {
-    color: white;
+    color: #5b605f;
     margin-top: 2%;
     margin-left: 2%; }
 
@@ -48,7 +47,7 @@ h2 {
   background: #47c9ad;
   text-align: right; }
   .rightHalf .rightMessage {
-    color: white;
+    color: #5b605f;
     margin-top: 2%;
     margin-right: 2%; }
 

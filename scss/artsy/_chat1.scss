@@ -16,9 +16,9 @@
 
 .leftHalf {
 		width: 50%;
-		background: $maroon;
+	//	background: $maroon;
 		.leftMessage {
-			color: white;
+			color: $master-header-color;
 			margin-top: 2%;
 			margin-left: 2%;
 	}
@@ -29,7 +29,7 @@
 	background: darken($teal, 25%);
 	text-align: right;
 	.rightMessage {
-		color: white;
+		color: $master-header-color;
 		margin-top: 2%;
 		margin-right: 2%;
 	}
