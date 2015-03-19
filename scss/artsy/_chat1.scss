@@ -6,11 +6,41 @@
 	position: relative;
 }
 
-.messagingArea {
-	position: absolute;
-	bottom: 0;
+
+
+.messageWindow {
 	display: flex;
 	width: 100%;
+	height: 100%;
+}
+
+.leftHalf {
+		width: 50%;
+		background: $maroon;
+		.leftMessage {
+			color: white;
+			margin-top: 2%;
+			margin-left: 2%;
+	}
+}
+
+.rightHalf {
+	width: 50%;
+	background: darken($teal, 25%);
+	text-align: right;
+	.rightMessage {
+		color: white;
+		margin-top: 2%;
+		margin-right: 2%;
+	}
+}
+
+
+.compositionArea {
+	display: flex;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
 .messageInput {

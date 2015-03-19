@@ -1,3 +1,7 @@
 $('.clickSend').on('click', function() {
-   $('.chatContainer').append($('.messageInput').val());
+   $('.leftMessage').append($('.messageInput').val());
+});
+
+$('.sendButton').on('click', function() {
+   $('.rightMessage').append($('.messageInput').val());
 });
