@@ -11,7 +11,7 @@ gulp.task('webserver', function() {
 gulp.task('watch', function() {
     gulp.watch('./css/*.css', ['css']);
     gulp.watch('./*.html', ['html']);
-    gulp.watch('./*.js', ['js']);
+    gulp.watch('./js/*.js', ['js']);
 });
 
 gulp.task('html', function() {
