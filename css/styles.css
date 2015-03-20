@@ -43,6 +43,9 @@ header {
   padding-top: 0;
   width: 45%;
   margin: 0 auto; }
+  @media (max-width: 767px) {
+    .line {
+      width: 90%; } }
 
 .row {
   display: inline-flex;
@@ -53,10 +56,16 @@ header {
 .boom {
   display: flex;
   font-size: 1.2em; }
+  @media (max-width: 767px) {
+    .boom {
+      display: block; } }
 
 .played {
   width: 50%;
   margin-right: 10%; }
+  @media (max-width: 767px) {
+    .played {
+      width: 100%; } }
 
 .circles {
   display: flex;

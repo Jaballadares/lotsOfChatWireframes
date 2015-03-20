@@ -15,6 +15,9 @@
   padding-top: 0;
   width: 45%;
   margin: 0 auto;
+  @include breakpoint(small) {
+    width: 90%;
+  }
 }
 .row {
   display: inline-flex;
@@ -26,11 +29,17 @@
 .boom {
   display: flex;
   font-size: 1.2em;
+  @include breakpoint(small) {
+    display: block;
+  }
 }
 
 .played {
   width: 50%;
   margin-right: 10%;
+  @include breakpoint(small) {
+    width: 100%;
+  }
 }
 
 .circles {
