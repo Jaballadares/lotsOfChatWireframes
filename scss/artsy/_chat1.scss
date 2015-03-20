@@ -1,12 +1,20 @@
-.chatContainer {
-	width   : 85%;
+/* .chatContainer {
+	width   : 50%;
 	height  : 250px;
 	border  : 5px solid $orange;
 	margin  : 0 auto;
 	position: relative;
 }
+ */
 
-
+.chatContainer {
+	width: 50%;
+  height: 200px;
+  border: 5px solid #D85212;
+  /* margin: 0 auto; */
+  position: relative;
+  margin-top: 3.2%;
+}
 
 .messageWindow {
 	display: flex;

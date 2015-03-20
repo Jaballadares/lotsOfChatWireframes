@@ -2,3 +2,77 @@
   font-size: .5em;
   vertical-align: middle;
 }
+
+.mainHeader {
+  margin-bottom: .2%;
+}
+
+.line {
+  height: 2px;
+  /* border: 1px solid black; */
+  color: black;
+  background: black;
+  padding-top: 0;
+  width: 45%;
+  margin: 0 auto;
+}
+.row {
+  display: inline-flex;
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.boom {
+  display: flex;
+  font-size: 1.2em;
+}
+
+.played {
+  width: 50%;
+  margin-right: 10%;
+}
+
+.circles {
+  display: flex;
+  margin: 0 auto;
+}
+.chain {
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 2%;
+    @include breakpoint(small) {
+      width: 150px;
+      height: 150px;
+  }
+    @include breakpoint(medium) {
+      margin-top: 4%;
+    }
+}
+.greenCircle {
+  background-color: $green;
+}
+.two::before{
+  position: absolute;
+  left: 10px;
+}
+.blueCircle {
+  background-color: rgba(145, 185, 176, 0.9);
+  margin-left: -80px;
+}
+
+.hide {
+  display: none;
+}
