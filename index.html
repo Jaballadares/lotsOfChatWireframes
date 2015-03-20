@@ -8,25 +8,39 @@
 		<link rel="stylesheet" href="css/styles.css" media="screen">
 	</head>
 	<body>
-		<h1>Test</h1>
-		<div class="chatContainer">
+		<header>
+			<h1>Super [<span class="secret">SECRET</span>] Message App</h1>
+		</header>
+		<div class="row">
+			<section class="boom">
 
-			<div class="messageWindow">
-				<div class="leftHalf">
-					<p class="leftMessage"></p>
+	      <p class="played">“What about little microphones? What if everyone swallowed them, and they played the sounds of our hearts through little speakers, which could be in the pouches of our overalls? When you skateboarded down the street at night you could hear everyone's heartbeat, and they could hear yours, sort of like sonar. One weird thing is, I wonder if everyone's hearts would start to beat at the same time, like how women who live together have their menstrual periods at the same time, which I know about, but don't really want to know about. That would be so weird, except that the place in the hospital where babies are born would sound like a crystal chandelier in a houseboat, because the babies wouldn't have had time to match up their heartbeats yet. And at the finish line at the end of the New York City Marathon it would sound like war.”</p>
+	      <div class="circles">
+	        <div class="greenCircle chain"></div>
+	        <div class="blueCircle chain"></div>
+	      </div>
+
+	    </section>
+
+			<div class="chatContainer hide">
+
+				<div class="messageWindow">
+					<div class="leftHalf">
+						<p class="leftMessage"></p>
+						</div>
+					<div class="rightHalf">
+						<p class="rightMessage"></p>
 					</div>
-				<div class="rightHalf">
-					<p class="rightMessage"></p>
-				</div>
-			</div> <!-- end messageWindow -->
+				</div> <!-- end messageWindow -->
 
-			<div class="compositionArea">
-				<input type="text" placeholder="Enter Message Here" class="messageInput">
-				<button class="clickSend">Send Message</button>
-				<button class="sendButton">Send</button>
-			</div> <!-- end composition area -->
+				<div class="compositionArea">
+					<input type="text" placeholder="Enter Message Here" class="messageInput">
+					<button class="clickSend">Send Message</button>
+					<button class="sendButton">Send</button>
+				</div> <!-- end composition area -->
 
-		</div>
+			</div>
+		</div> <!-- end row -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/junk.js"></script>

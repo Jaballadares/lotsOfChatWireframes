@@ -23,10 +23,73 @@ h2 {
   margin: 0 auto;
   padding-bottom: 2.3%; }
 
+header {
+  text-align: center;
+  font-size: 1.5em; }
+
+.row {
+  display: inline-flex;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.boom {
+  display: flex;
+  font-size: 1.2em; }
+
+.played {
+  width: 50%; }
+
+.circles {
+  display: flex;
+  margin: 0 auto; }
+
+.chain {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1em;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 2%; }
+  @media (max-width: 767px) {
+    .chain {
+      width: 150px;
+      height: 150px; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .chain {
+      margin-top: 4%; } }
+
+.greenCircle {
+  background-color: #6B7701; }
+
+.two::before {
+  position: absolute;
+  left: 10px; }
+
+.blueCircle {
+  background-color: rgba(145, 185, 176, 0.9);
+  margin-left: -80px; }
+
+.hide {
+  display: none; }
+
+.secret {
+  font-size: .5em;
+  vertical-align: middle; }
+
 .chatContainer {
   width: 85%;
   height: 250px;
-  border: 5px solid #d85212;
+  border: 5px solid #D85212;
   margin: 0 auto;
   position: relative; }
 
@@ -38,7 +101,7 @@ h2 {
 .leftHalf {
   width: 50%; }
   .leftHalf .leftMessage {
-    color: #5b605f;
+    color: #5B605F;
     margin-top: 2%;
     margin-left: 2%; }
 
@@ -47,7 +110,7 @@ h2 {
   background: #47c9ad;
   text-align: right; }
   .rightHalf .rightMessage {
-    color: #5b605f;
+    color: #5B605F;
     margin-top: 2%;
     margin-right: 2%; }
 
@@ -91,7 +154,7 @@ h2 {
   right: 0;
   border: none;
   color: white;
-  background-color: #aae6d9;
+  background-color: #AAE6D9;
   padding: 2%;
   font-size: 1em; }
   .clickSend:hover {
@@ -100,3 +163,5 @@ h2 {
   @media (max-width: 767px) {
     .clickSend {
       font-size: .7em; } }
+
+/*# sourceMappingURL=styles.css.map */
